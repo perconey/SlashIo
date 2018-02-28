@@ -18,6 +18,12 @@ namespace SlashIo
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "ClientDetails",
+                url: "Client-{id}",
+                defaults: new {Controller = "Page", action = "Details"}
+
+                );
         }
     }
 }
