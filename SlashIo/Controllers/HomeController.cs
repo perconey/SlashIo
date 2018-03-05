@@ -9,10 +9,6 @@ namespace SlashIo.Controllers
             return View();
         }
 
-        //public ActionResult Index()
-        //{
-        //    return View();
-        //}
             
     }
 }
