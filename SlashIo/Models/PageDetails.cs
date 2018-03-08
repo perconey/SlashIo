@@ -7,6 +7,8 @@ namespace SlashIo.Models
 {
     public class PageDetails
     {
+        private int _pagedetailsid;
+
         private string _currentPrefix;
 
         private bool _imagesAreUrlProvided;
@@ -20,5 +22,6 @@ namespace SlashIo.Models
         public bool ImagesAreUrlProvided { get => _imagesAreUrlProvided; set => _imagesAreUrlProvided = value; }
         public List<string> ImageUrls { get => _imageUrls; set => _imageUrls = value; }
         public OgPropertySet PropSet { get => _propSet; set => _propSet = value; }
+        public int Pagedetailsid { get => _pagedetailsid; set => _pagedetailsid = value; }
     }
 }
