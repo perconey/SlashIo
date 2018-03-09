@@ -2,12 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:fb="http://ogp.me/ns/fb#">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title — SlashIo</title>
-    <link href = "~/Content/main.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/main.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.scrolly.min.js"></script>
+    <script src="~/Scripts/skel.min.js"></script>
+    <script src="~/Scripts/util.js"></script>
+    <script src="~/Scripts/main.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -15,11 +20,6 @@
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    <script src="~/Scripts/jquery.min.js"></script>
-    <script src="~/Scripts/jquery.scrolly.min.js"></script>
-    <script src="~/Scripts/skel.min.js"></script>
-    <script src="~/Scripts/util.js"></script>
-    <script src="~/Scripts/main.js"></script>
     @RenderSection("scripts", required: false)
 
     <!-- Header -->
