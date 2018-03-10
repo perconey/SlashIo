@@ -2703,7 +2703,7 @@ body {
             }
 
                 #header nav a[href="#menu"]:before {
-                    content: "";
+                    content: url('../Images/hamburgerButton.png');
                     -moz-osx-font-smoothing: grayscale;
                     -webkit-font-smoothing: antialiased;
                     font-family: FontAwesome;
@@ -2734,6 +2734,11 @@ body {
         #header .logo {
             font-size: 1.25em;
             text-align: center;
+        }
+
+        #header img .logo {
+            width: 20%;
+            height: 20%;
         }
 
         #header nav a[href="#menu"] {
