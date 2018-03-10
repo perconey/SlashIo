@@ -2640,6 +2640,7 @@ body {
     padding-top: 6em;
 }
 
+
 #header {
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -2703,9 +2704,13 @@ body {
             }
 
                 #header nav a[href="#menu"]:before {
-                    content: url('../Images/hamburgerButton.png');
-                    -moz-osx-font-smoothing: grayscale;
-                    -webkit-font-smoothing: antialiased;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                    content: "";
+                    background: url('../Images/hamburgerButton.png') no-repeat 0 0;
+                    background-size: 100%;
                     font-family: FontAwesome;
                     font-style: normal;
                     font-weight: normal;
