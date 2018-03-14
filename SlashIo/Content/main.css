@@ -2850,7 +2850,7 @@ body {
     }
 
         #menu .close:before {
-            content: "";
+            content: "X";
             -moz-osx-font-smoothing: grayscale;
             -webkit-font-smoothing: antialiased;
             font-family: FontAwesome;
@@ -2901,7 +2901,7 @@ body {
 
 #banner {
     padding: 14em 0 12em 0;
-    background-image: url(../../images/banner.jpg);
+    background-image: url('../Images/animBack.gif');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -2918,6 +2918,14 @@ body {
 
     #banner h1 {
         font-size: 3em;
+        color: #25a2c3;
+        line-height: 1em;
+        margin: 0 0 0.5em 0;
+        padding: 0;
+    }
+
+    #banner b {
+        font-size: 1.2em;
         color: #25a2c3;
         line-height: 1em;
         margin: 0 0 0.5em 0;
