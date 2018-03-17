@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -15,6 +16,7 @@ namespace SlashIo.Models
         private string _ogDescription;
         private string _ogImage;
 
+        [Key]
         public int Ogsetid { get => _ogsetid; set => _ogsetid = value; }
 
         public string Ogurl { get => _ogurl; set => _ogurl = value; }
