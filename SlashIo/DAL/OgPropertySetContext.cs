@@ -14,6 +14,7 @@ namespace SlashIo.DAL
 
         }
 
-        public DbSet<OgPropertySet> Clients { get; set; }
+        public DbSet<OgPropertySet> OgPropertySets { get; set; }
+        public DbSet<PageDetails> PageDetails { get; set; }
     }
 }
