@@ -23,6 +23,13 @@ namespace SlashIo
                 defaults: new {Controller = "Page", action = "Details"}
 
                 );
+
+                        routes.MapRoute(
+                name: "ClientDetails",
+                url: "{name}",
+                defaults: new {Controller = "UserEnterController", action = "Index"}
+
+                );
         }
     }
 }
