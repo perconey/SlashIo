@@ -24,12 +24,7 @@ namespace SlashIo
 
                 );
 
-                        routes.MapRoute(
-                name: "ClientDetails",
-                url: "{name}",
-                defaults: new {Controller = "UserEnterController", action = "Index"}
-
-                );
+                   
         }
     }
 }
