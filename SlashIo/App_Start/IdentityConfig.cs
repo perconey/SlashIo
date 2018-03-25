@@ -7,11 +7,12 @@ using SlashIo.DAL;
 using SlashIo.Models;
 
 
+//[assembly: OwinStartup(typeof(SlashIo.App_Start.IdentityConfig))]
 namespace SlashIo.App_Start
 {
         public class IdentityConfig
         {
-            public void Configuration(IAppBuilder app)
+        public void Configuration(IAppBuilder app)
             {
                 app.CreatePerOwinContext(() => new MainDbContext());
                 app.CreatePerOwinContext<AppUserManager>(AppUserManager.Create);
