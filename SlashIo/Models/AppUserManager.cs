@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin;
+using SlashIo.DAL;
 
 namespace SlashIo.Models
 {
@@ -16,7 +18,7 @@ namespace SlashIo.Models
             IdentityFactoryOptions<AppUserManager> options, IOwinContext context)
         {
             var manager = new AppUserManager(
-                new UserStore<AppUser>(context.Get<MyDbContext>()));
+                new UserStore<AppUser>(context.Get<MainDbContext>()));
 
          // dodaktowa konfiguracja managera
 
