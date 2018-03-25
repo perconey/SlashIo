@@ -25,8 +25,8 @@ namespace SlashIo
                 LoginPath = new PathString("/Home/Login"),
             });
             app.UseFacebookAuthentication(
-            appId: "test",
-            appSecret: "test");
+            appId: "123",
+            appSecret: "123");
         }
     }
 }
