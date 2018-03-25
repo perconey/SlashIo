@@ -24,6 +24,9 @@ namespace SlashIo
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
                 LoginPath = new PathString("/Home/Login"),
             });
+            app.UseFacebookAuthentication(
+            appId: "test",
+            appSecret: "test");
         }
     }
 }
