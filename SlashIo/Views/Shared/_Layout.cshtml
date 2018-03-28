@@ -20,7 +20,27 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '189191481860486',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.7'
+            });
 
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
@@ -28,7 +48,7 @@
 
     <!-- Header -->
     <header id="header">
-        <div class="hey" height="20" width="20" >
+        <div class="hey" height="20" width="20">
             <nav class="left">
                 <a href="#menu"><span><img width="100" height="50" src="~/Images/hamburgerButton.png" /> </span></a>
             </nav>
@@ -37,7 +57,6 @@
             <img width="150" height="62" src="~/Images/slashiobannerhigh.png" />
         </a>
         <nav class="right">
-            <a href="" class="button alt">Log in</a>
         </nav>
     </header>
 
